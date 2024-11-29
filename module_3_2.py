@@ -1,6 +1,3 @@
-from pyexpat.errors import messages
-
-
 def send_email(message, recipient, sender = "university.help@gmail.com"):
     valid_endings = ('.com', '.ru', 'net')
     if '@' in recipient and '@' in sender and recipient.endswith(valid_endings) and sender.endswith(valid_endings):
